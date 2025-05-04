@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "pytourchtutorial"
+version = "0.1.0"
+description = ""
+authors = ["Sergei Sorochinskii <sergei.sorochinskii93@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+torch = "^2.6.0"
+torchvision = "^0.21.0"
+torchaudio = "^2.6.0"
+numpy = "^2.2.5"
+pillow = "^11.2.1"
+matplotlib = "^3.10.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
