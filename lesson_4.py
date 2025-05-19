@@ -135,3 +135,12 @@ print(f"{type(img_obj)=}")
 print(f"{img_obj.shape=}")  # (C, H, W)
 print(f"{img_obj.dtype=}")
 print(f"min = {img_obj.min()}; max = {img_obj.max()}")
+
+# Split training data on training and validtion data
+
+train_data, val_data = random_split(train_data, [0.8, 0.2])
+
+# Create Batches
+train_loader = DataLoader(train_data, batch_size=16, shuffle=True)
+val_loader = DataLoader(val_data, batch_size=16, shuffle=False)
+test_loader = DataLoader(test_data, batch_size=16, shuffle=False)
